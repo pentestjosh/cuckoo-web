@@ -3,8 +3,12 @@
 Basic install guide for a Cuckoo host using a Windows 7 guest VM for analysis
 
 https://github.com/pentestjosh/cuckoo-web/blob/master/cuckoo_install_web.md
+
+Basic Cuckoo Web-Deployment with uWSGI & nginx
+
+https://github.com/pentestjosh/cuckoo-web/blob/master/cuckoo-nginx.md
+
 # TO DO:
-nginx (DONE - need to add guide)
 
 https
 
