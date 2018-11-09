@@ -1,9 +1,8 @@
 # _A GUIDE TO INSTALLING CUKCOO WITH A WEB INTERFACE ON UBUNTU 18.04 LTS_`
 # `Have fun, find malware` -
 # UPDATED NOVEMBER 6 2018
-####################################################################################
-#-------------------------------`CREATION OF HOST MACHINE`-------------------------#           
-####################################################################################
+## `CREATION OF HOST MACHINE`        
+
 
 ## INSTALL `Python Libraries`
 ```
@@ -39,19 +38,10 @@ getcap /usr/sbin/tcpdump
 should display - /usr/sbin/tcpdump = cap_net_admin,cap_net_raw+eip
 ```
 
-## INSTALL M2Crypto - NOT INSTALLED - NEW CUCKOO DOCUMENTATION SAYS NOT NEEDED.
-# WILL REMOVE ONCE CONFIRMED
-#
-# sudo apt-get install swig
-# sudo pip install m2crypto==0.24.0
-
-
 ## INSTALL `guacd`
 ```
 sudo apt install libguac-client-rdp0 libguac-client-vnc0 libguac-client-ssh0 guacd
 ```
-
-
 #### `NEW USER CREATION IF NEEDED` ####
 ## New User (cuckoo)
 #`sudo adduser cuckoo`
@@ -88,9 +78,7 @@ sudo pip install -U cuckoo (may have broken deps from #1) - Run #1 again if need
 `echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward`
 `exit`
 
-##################################################################################################
-#---------------`RDP Setup to install VM GUEST (THIS WILL BE REMOVED AFTER INSTALL)`-------------#
-##################################################################################################
+## RDP Setup to install VM GUEST (THIS WILL BE REMOVED AFTER INSTALL)
 
 # Install xrdp
 ```
@@ -102,9 +90,7 @@ sudo apt install xfce4 slim
 sudo service slim start
 ```
 
-##################################################################################################
 #----------------``******** RDP into Server to Continue Installation *********``-----------------#
-##################################################################################################
 `Using RDP client, connect to the cuckoo server using your server creds and continue installation`
 
 ##################################-GUEST(VM) Installation-########################################
