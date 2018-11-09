@@ -281,5 +281,6 @@ cuckoo web runserver 0.0.0.0:PORT
 cuckoo web -H 0
 ```
 ## YOU SHOULD NOW BE READY TO USE CUCKOO 
-This covers the very basic configuration of install Cuckoo. You will need to set it up to your requirements and enable the 
-appropriate analyzers and their configurations. 
+This covers the very basic installation and configuration of Cuckoo. You will need to set it up according your requirements and enable the appropriate analyzers and their configurations. 
+
+# COMING SOON: WEB DEPLOYMENT OF CUCKOO WITH HTTPS AND AUTHENTICATION
