@@ -7,3 +7,7 @@ nginx (DONE - need to add guide)
 https
 
 basic authentication
+
+MISP integration 
+
+Distributed Cuckoo ?
