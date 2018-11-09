@@ -1,44 +1,43 @@
 # _A GUIDE TO INSTALLING CUKCOO WITH A WEB INTERFACE ON UBUNTU 18.04 LTS_`
-# `Have fun, find malware` -
-# UPDATED NOVEMBER 6 2018
-## `CREATION OF HOST MACHINE`        
+UPDATED NOVEMBER 8 2018
+# `Have fun, find malware` 
 
+# `CREATION OF HOST MACHINE`        
 
-## INSTALL `Python Libraries`
+# `Python Libraries`
 ```
 sudo apt-get install python python-pip python-dev libffi-dev libssl-dev
 sudo apt-get install python-virtualenv python-setuptools
 sudo apt-get install libjpeg-dev zlib1g-dev swig
 ```
 
-## INSTALL `MongoDB`
+# `MongoDB`
 `sudo apt-get install mongodb`
 
-## INSTALL `PostgreSQL`
+# `PostgreSQL`
 `sudo apt-get install postgresql libpq-dev`
 
-## INSTALL `Virtual Box`
+# `Virtual Box`
 ```
 sudo apt-get update
 sudo apt-get install virtualbox
 ```
-## INSTALL `TCPdump`
+# `TCPdump`
 ```
 sudo apt-get install tcpdump apparmor-utils
 sudo aa-disable /usr/sbin/tcpdump
 ```
 
-## SET `TCPdump Privs`
+# SET `TCPdump Privs`
 ```
 sudo setcap cap_net_raw,cap_net_admin=eip /usr/sbin/tcpdump
 ```
-## `Verify Cap Privs`
+# Verify `Cap Privs`
 ```
 getcap /usr/sbin/tcpdump
 should display - /usr/sbin/tcpdump = cap_net_admin,cap_net_raw+eip
 ```
-
-## INSTALL `guacd`
+# `guacd`
 ```
 sudo apt install libguac-client-rdp0 libguac-client-vnc0 libguac-client-ssh0 guacd
 ```
