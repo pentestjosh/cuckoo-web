@@ -1,8 +1,8 @@
-# _A GUIDE TO INSTALLING CUKCOO WITH A WEB INTERFACE ON UBUNTU 18.04 LTS_`
+# _A GUIDE TO INSTALLING CUKCOO WITH A WEB INTERFACE ON UBUNTU 18.04 LTS_
 UPDATED NOVEMBER 8 2018
-# `Have fun, find malware` 
+# `Have fun, the power of malware compels you !` 
 
-# `CREATION OF HOST MACHINE`        
+# `HOST MACHINE REQUIREMENTS AND CUCKOO INSTALL`        
 
 # `Python Libraries`
 ```
@@ -50,7 +50,7 @@ sudo apt install libguac-client-rdp0 libguac-client-vnc0 libguac-client-ssh0 gua
 #### `NEW USER CREATION IF NEEDED` ####
 # New User (cuckoo)
 #`sudo adduser cuckoo`
-#
+
 # Add to vboxusers
 #`sudo usermod -a -G vboxusers cuckoo`
 
@@ -63,16 +63,14 @@ sudo apt install libguac-client-rdp0 libguac-client-vnc0 libguac-client-ssh0 gua
 sudo pip install -U pip setuptools
 sudo pip install -U cuckoo (may have broken deps from #1) - Run #1 again if needed.
 ```
-
-
 # `NETWORKING SETUP`
 
 # `Create Virtual Interface`
-# If the hostonly interface vboxnet0 does not exist already.
+If the hostonly interface vboxnet0 does not exist already.
 ```
 VBoxManage hostonlyif create
 ```
-###Configure vboxnet0
+# Configure vboxnet0
 ```
 VBoxManage hostonlyif ipconfig vboxnet0 --ip 192.168.56.1
 ```
@@ -114,17 +112,18 @@ analysis. In this install guide we are using a Windows 7 32bit SP1 Image.
 # WINDOWS OR OS IMAGE OF CHOICE
 # Windows 7 32 SP1
 #
-# AS THE WIN VM HAS NO INTERNET ACCESS YOU WILL NEED TO CREATE A SHARED FOLDER TO INSTALL
-# THE REQUIRED FILES. THIS REQUIRES AN INSTALL OF GUEST ADDITIONS WHICH WILL BE REMOVED AFTER INSTALL
+AS THE WIN VM HAS NO INTERNET ACCESS YOU WILL NEED TO CREATE A SHARED FOLDER TO INSTALL
+THE REQUIRED FILES. THIS REQUIRES AN INSTALL OF GUEST ADDITIONS WHICH WILL BE REMOVED AFTER 
+INSTALL. SOME MALWARE MAY DETECT IT'S IN A SANDBOXED ENVIRONMENT WITH GUEST EDITIONS INSTALLED.
 #
 # INSTALL PYTHON 2.7 ON WINDOWS
-# http://www.python.org/getit/
+http://www.python.org/getit/
 
 # INSTALL PYTHON PILLOW - USED FOR SCREENSHOTS
-# https://python-pillow.org/
+https://python-pillow.org/
 
 # INSTALL 'PDF READERS, BROWSERS ETC FOR TESTING'
-# `Adobe Reader, Adobe Flash Player, Java, Outlook Express, Office 2016`
+`Adobe Reader, Adobe Flash Player, Java, Outlook Express, Office 2016`
 
 # MAKE SURE YOU `OPEN APPLICATIONS AFTER INSTALL` TO GET RID OF THE "FIRST-RUN" POP-UPS
 ```
@@ -133,10 +132,10 @@ analysis. In this install guide we are using a Windows 7 32bit SP1 Image.
 ```
 ```
 # Create a windows virtal machine in virtualbox named cuckoo1
-# If you are running multiple instances, name the VM accordingly. ie; cuckoo1, cuckoo2, cuckoo3
+If you are running multiple instances, name the VM accordingly. ie; `cuckoo1, cuckoo2, cuckoo3`
 ```
 Ensure it is set to "_Host-Only_" Networking on vboxnet0 - You do not ever want to expose this
-Windows VM to the internet ever. It has _NO FIREWALL/UPDATES/AV_ -> _HOST-ONLY NETWORKING !!!!!_
+Windows VM to the internet ever. It has `_NO FIREWALL/UPDATES/AV_ -> _HOST-ONLY NETWORKING !!!!!_`
 ```
 You may need to create a host-only network in host-network manager in virtualbox
 
