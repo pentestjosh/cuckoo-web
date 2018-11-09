@@ -261,9 +261,12 @@ VBoxManage hostonlyif ipconfig vboxnet0 --ip 192.168.56.1
 # NOW START CUCKOO
 ```
 cuckoo -d (starts cuckoo with diagnostics -d)
-cuckoo --cwd /data/cuckoo/.cuckoo -d
-(Run cuckoo in a CWD other than home. In this case data)
+cuckoo --cwd /data/cuckoo/.cuckoo -d (Run cuckoo in a CWD other than home. In this case data)
+cuckoo --cwd /data/cuckoo/.cuckoo web runserver <IP>:<PORT>
 ```
+
+# CUCKOO RUN OPTIONS
+
 # In order to start the web interface, you can simply run the following command from the web/ directory:
 ```
 cuckoo web  (starts on localhost:8000 by default)
@@ -277,4 +280,6 @@ cuckoo web runserver 0.0.0.0:PORT
 ```
 cuckoo web -H 0
 ```
-## YOU SHOULD NOW BE READY TO USE CUCKOO ! _THE POWER OF MALWARE COMPELS YOU !_
+## YOU SHOULD NOW BE READY TO USE CUCKOO 
+This covers the very basic configuration of install Cuckoo. You will need to set it up to your requirements and enable the 
+appropriate analyzers and their configurations. 
