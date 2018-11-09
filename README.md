@@ -1,4 +1,4 @@
-![alt text](https://avatars0.githubusercontent.com/u/1032683?s=400&v=4)
+![alt text](https://s3-us-west-1.amazonaws.com/umbrella-blog-uploads/wp-content/uploads/2015/03/cuckoo.png)
 # A Guide to Installing Cuckoo sandbox with a web interface and secure web deployment
 Basic install guide for a Cuckoo host using a Windows 7 guest VM for analysis
 # TO DO:
