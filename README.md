@@ -1,7 +1,7 @@
-# cuckoo-web
-A Guide to Installing Cuckoo with a Web Interface (DONE)
+# A Guide to Installing Cuckoo with a web interface and secure web deployment
+Basic install guide for cuckoo and a Windows 7 VM created
 # TO DO:
-nginx to forward web interface (DONE - need to add to guide)
+nginx (DONE - need to add guide)
 
 https
 
