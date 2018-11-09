@@ -192,52 +192,47 @@ Confirm this in the following files:
 All Cuckoo configuration files are located in the ~/.cuckoo/conf directory.
 
 cuckoo community (updates cuckoo)
-```
 ==================================
-cuckoo.conf
+_cuckoo.conf_
 [cuckoo]
-
 memory_dump = yes
 machinery = virtualbox
 
 [resultserver]
-
 ip = 192.168.56.1
 ==================================
-auxillary.conf
+_auxillary.conf_
 [sniffer]
 enabled = yes
 ==================================
-virtualbox.conf
+_virtualbox.conf_
 [virtualbox]
 mode = gui
 machines = cuckoo1
 
 [cuckoo1]
-
 label = cuckoo1
-
 platform = windows
 ip = 192.168.56.101
 snapshot = Snapshot1
 ==================================
-processing.conf
+_processing.conf_
 [memory]
 enabled = yes
 ==================================
-memory.conf (for volatility profile)
+_memory.conf_ (for volatility profile)
 [basic]
 guest_profile = “Win7SP1x86”
 ==================================
-reporting.conf
+_reporting.conf_
 [singlefile]
 Enable creation of report.html?
 enabled = yes
 ﻿
 [mongodb]
 enabled = yes
-=================================_
-```
+=================================
+
 ...............,´¯­­`,
 .........,´¯`,....­­/
 ....../¯/.../..../
@@ -259,14 +254,10 @@ vboxmanage hostonlyif ipconfig vboxnet0 --ip 192.168.56.1
 cuckoo --cwd /data/cuckoo/.cuckoo -d
 cuckoo --cwd /data/cuckoo/.cuckoo web runserver <IP>:<PORT>
 ```
-#_
-# Run cuckoo
-#
 # IMPORTANT: ENSURE VBOXNET0 IS UP (ifconfig) OR RUN:
 ```
 VBoxManage hostonlyif ipconfig vboxnet0 --ip 192.168.56.1
 ```
-
 # NOW START CUCKOO
 ```
 cuckoo -d (starts cuckoo with diagnostics -d)
