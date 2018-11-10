@@ -2,7 +2,7 @@
 # Installing Cuckoo sandbox with a web interface and secure web deployment
 Basic install guide for a Cuckoo host using a Windows 7 guest VM for analysis
 
-https://github.com/pentestjosh/cuckoo-web/blob/master/cuckoo_install_web.md
+https://github.com/pentestjosh/cuckoo-web/blob/master/cuckoo-install.md
 
 Basic Cuckoo Web-Deployment with uWSGI & nginx
 
