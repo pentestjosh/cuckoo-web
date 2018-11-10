@@ -6,14 +6,5 @@ https://github.com/pentestjosh/cuckoo-web/blob/master/cuckoo_install_web.md
 
 Basic Cuckoo Web-Deployment with uWSGI & nginx
 
-https://github.com/pentestjosh/cuckoo-web/blob/master/cuckoo-nginx.md
+https://github.com/pentestjosh/cuckoo-web/blob/master/cuckoo-web-deployment.md
 
-# TO DO:
-
-https
-
-basic authentication
-
-MISP integration 
-
-Distributed Cuckoo ?
