@@ -168,8 +168,8 @@ upstream _uwsgi_cuckoo_web {
 }
 
 server {
-    listen 142.101.171.210:8000;
-    server_name 142.101.171.210;
+    listen x.x.x.x:8000;
+    server_name x.x.x.x;
     return 301 https://$server_name$request_uri;
 }    
    
@@ -177,8 +177,8 @@ server {
 
     # SSL configuration
 
-    listen 443 ssl http2 142.101.171.210;
-    listen [::]:443 ssl http2 142.101.171.210;
+    listen 443 ssl http2 x.x.x.x;
+    listen [::]:443 ssl http2 x.x.x.x;
     include snippets/self-signed.conf;
     include snippets/ssl-params.conf;
 
