@@ -27,4 +27,3 @@ reporting.conf-apikey = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 # MISP configuration (misp-modules must be enabled and running)
 You will need to login to your MISP and go to the Administration -> Server Settings & Maintenance -> Plug-in Settings -> Import
-ADD PICTURE HERE
