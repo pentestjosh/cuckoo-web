@@ -6,4 +6,4 @@
 
 [MISP Integration](https://github.com/pentestjosh/cuckoo-web/blob/master/cuckoo-misp-integration.md)
 
-[Cuckoo 2.0.6 Manual] (https://github.com/pentestjosh/cuckoo-web/blob/master/cuckoo-manual-v2-0-6.pdf)
+[Cuckoo 2-0-6 Manual](https://github.com/pentestjosh/cuckoo-web/blob/master/cuckoo-manual-v2-0-6.pdf)
