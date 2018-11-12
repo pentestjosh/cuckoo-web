@@ -1,5 +1,5 @@
 # Cuckoo and MISP Integration
-Cuckoo 2.0 comes with ready-to-use modules to interact with the MISP REST API via the PyMISP Python module.
+Cuckoo comes with ready-to-use modules to interact with the MISP REST API via the PyMISP Python module.
 There is one processing module (to search for existing IoC’s in MISP) and one reporting module (to create a new event in MISP).
 The configuration is very simple, just define your MISP URL and API key in the proper configuration files and you’re good to go:
 
